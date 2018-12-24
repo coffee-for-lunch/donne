@@ -1,4 +1,0 @@
-#pip3 install tweepy
-pip install openpyxl
-pip install os
-pip install time
