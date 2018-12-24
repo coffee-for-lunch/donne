@@ -18,9 +18,7 @@ api = tweepy.API(auth)
 
 # grabbing the poems
 
-os.chdir('/Users/gregoryblume/Desktop')
-
-workbook = openpyxl.load_workbook('Donne.xlsx', data_only=True)
+workbook = openpyxl.load_workbook(os.getcwd() + '/Donne.xlsx', data_only=True)
 sheet = workbook['Songs and Sonets']
 line = sheet['B6'].value
 line2 = sheet['B7'].value
